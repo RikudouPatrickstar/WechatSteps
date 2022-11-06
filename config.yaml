@@ -1,0 +1,16 @@
+# Zepp 登录信息，账号必须是"手机号@163.com"的邮箱格式
+login:
+  account: "phone@163.com"
+  password: "mima"
+# 随机步数范围，区分工作日和节假日
+steps:
+  workday:
+    min: 12000
+    max: 15000
+  holiday:
+    min: 5000
+    max: 8000
+# 执行的随机延迟范围（秒）
+exec_sleep:
+  min: 10
+  max: 300
