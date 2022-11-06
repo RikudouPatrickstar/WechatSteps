@@ -9,14 +9,14 @@
 下述两种方法选其一即可
 
 ### 直接运行：
-1. 手机应用商店安装 Zepp APP。
-2. 注册账号，不要用客户端授权登录，手动用邮箱注册。邮箱格式"手机号@163.com"，不需要真实邮箱。
-3. 记下注册的邮箱和密码。
-4. 进入 Zepp APP，绑定微信运动。
-5. 复制 sample 目录为 data 目录。
-6. 编辑 config.yaml 中的各项参数。
-7. 安装好 Python3 环境。
-8. 手动执行 run.sh 或 run.cmd 运行脚本或参考 sample/crontab.list 设置定时任务。
+1. 安装好 Python3 环境。
+2. 手机应用商店安装 Zepp APP。
+3. 注册账号，不要用客户端授权登录，手动用邮箱注册。邮箱格式"手机号@163.com"，不需要真实邮箱。
+4. 记下注册的邮箱和密码。
+5. 进入 Zepp APP，绑定微信运动。
+6. 复制项目中 sample 目录为 data 目录。
+7. 编辑 data/config.yaml 中的各项参数。
+8. 手动执行 run.sh 或 run.cmd 运行脚本或参考 data/crontab.list 设置定时任务。
 
 ### 使用 Docker 运行：
 1. 手机应用商店安装 Zepp APP。

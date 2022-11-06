@@ -14,8 +14,9 @@ if [ ! -s "${WORK_DIR}"/data/crontab.list ];then
 fi
 
 echo -e "======================2. 启动定时任务========================\n"
-crond
 crontab "${WORK_DIR}"/data/crontab.list
 echo -e "成功添加定时任务...\n"
+
+crond -f
 
 exec "$@"
