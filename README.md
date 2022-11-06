@@ -26,9 +26,12 @@
 5. 拉取镜像 `docker pull thisispatrick/wechatsteps`
 6. 运行容器：
 ```shell
-mkdir wechat
-docker run -dit --name wechat_steps \
-    -v wechat:/wechat/data \
+mkdir wechat \
+&& docker run -dit \
+    --name wechat_steps \
+    --hostname wechat_steps \
+    --restart always \
+    --mount type=bind,source=${PWD}/wechat,target=/wechat/data \
     thisispatrick/wechatsteps
 ```
 7. 编辑 wechat 目录下的配置，填写好 config.yaml 中的各项参数，并设置 crontab.list 中的定时任务。
