@@ -1,0 +1,1 @@
+0 20 * * * bash WORK_DIR/run.sh
