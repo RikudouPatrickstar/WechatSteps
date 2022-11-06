@@ -111,7 +111,7 @@ if __name__ == "__main__":
 
     # 读取配置文件
     try:
-        with open("./config.yaml", encoding='utf-8') as f:
+        with open("./data/config.yaml", encoding='utf-8') as f:
             config = yaml.load(f.read(), Loader=yaml.FullLoader)
     except FileNotFoundError:
         print('配置文件：找不到文件')

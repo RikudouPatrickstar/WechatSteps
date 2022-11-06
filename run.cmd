@@ -1,7 +1,7 @@
 @echo off
 
 set WORK_DIR=%~dp0
-set LOG_FILE=%WORK_DIR%/log
+set LOG_FILE=%WORK_DIR%/data/log
 
 cd %WORK_DIR% || exit
 if not exist %LOG_FILE% (

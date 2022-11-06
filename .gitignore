@@ -1,4 +1,4 @@
 .idea/
+data/
 venv/
 log
-config.yaml

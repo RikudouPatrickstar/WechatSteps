@@ -13,7 +13,7 @@
 2. 注册账号，不要用客户端授权登录，手动用邮箱注册。邮箱格式"手机号@163.com"，不需要真实邮箱。
 3. 记下注册的邮箱和密码。
 4. 进入 Zepp APP，绑定微信运动。
-5. 复制 sample/config.yaml 到项目目录。
+5. 复制 sample 目录为 data 目录。
 6. 编辑 config.yaml 中的各项参数。
 7. 安装好 Python3 环境。
 8. 手动执行 run.sh 或 run.cmd 运行脚本或参考 sample/crontab.list 设置定时任务。
@@ -28,8 +28,7 @@
 ```shell
 mkdir wechat
 docker run -dit --name wechat_steps \
-    -v wechat/config.yaml:/wechat/config.yaml \
-    -v wechat/crontab.list:/wechat/crontab.list \
+    -v wechat:/wechat/data \
     thisispatrick/wechatsteps
 ```
 7. 编辑 wechat 目录下的配置，填写好 config.yaml 中的各项参数，并设置 crontab.list 中的定时任务。

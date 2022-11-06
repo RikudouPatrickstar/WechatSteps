@@ -1,7 +1,7 @@
 #!/bin/sh
 
 WORK_DIR=$(cd "$(dirname "$0")" || exit; pwd)
-LOG_FILE=${WORK_DIR}/log
+LOG_FILE=${WORK_DIR}/data/log
 
 # 进入工作目录（项目目录）
 cd "${WORK_DIR}" || exit
