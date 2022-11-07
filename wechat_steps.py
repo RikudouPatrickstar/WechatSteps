@@ -134,11 +134,12 @@ if __name__ == "__main__":
     step = str(randint(min_steps, max_steps))
 
     # 随机延迟30秒-20分钟执行
-    min_exec = config['exec_sleep']['min']
-    max_exec = config['exec_sleep']['max']
-    sleep_time = randint(min_exec, max_exec)
-    print("随机延迟" + str(sleep_time) + "秒")
-    time.sleep(sleep_time)
+    if config['exec_sleep']['enable']:
+        min_exec = config['exec_sleep']['min']
+        max_exec = config['exec_sleep']['max']
+        sleep_time = randint(min_exec, max_exec)
+        print("随机延迟" + str(sleep_time) + "秒")
+        time.sleep(sleep_time)
 
     # 开始执行
     change_steps()

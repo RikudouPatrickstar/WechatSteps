@@ -12,5 +12,6 @@ steps:
     max: 8000
 # 执行的随机延迟范围（秒）
 exec_sleep:
+  enable: false
   min: 10
   max: 300
